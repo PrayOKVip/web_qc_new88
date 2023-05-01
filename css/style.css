@@ -1,0 +1,138 @@
+html,
+body {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  overflow-x: hidden;
+  /* font-family: Microsoft YaHei, Microsoft JhengHei, PingFangTC, PingFangSC, PingFangHK, Helvetica; */
+}
+
+header {
+  background: url("../img/header.png");
+  height: 50px;
+  width: 100%;
+  mix-blend-mode: normal;
+  border: 1px solid #181828;
+  backdrop-filter: blur(20px);
+}
+
+main {
+  background: url(../img/background.png);
+  mix-blend-mode: normal;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+main .chaodon {
+  padding-top: 140px;
+}
+
+footer {
+  padding: 8px 0;
+  color: #fff;
+  font-size: 16px;
+  background-image: linear-gradient(#9493b1, #384070);
+  text-align: center;
+}
+
+/* .modal-body .name {
+  background: url("../img/ip_name.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: white;
+}
+.modal-body .name-real {
+  background: url("../img/name-real.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: white;
+}
+.modal-body .password {
+  background: url("../img/password.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: white;
+}
+.modal-body .code {
+  background: url("../img/number-code.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: white;
+}
+.modal-body .phone {
+  background: url("../img/phone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: white;
+} */
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ff8a14;
+}
+.modal-content {
+  background: radial-gradient(50% 50% at 50% 50%, #201c44 0%, #0e0c20 100%);
+  border: 1px solid #ff7e03;
+  width: 350px;
+}
+.modal-dialog-centered {
+  justify-content: center;
+}
+button.btn-close {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  border: none;
+  background-color: orange;
+  color: #fff;
+}
+.form-control {
+  border: 1px solid #0e0c20;
+  background-color: #d9d9d9;
+}
+form .mb-3 {
+  position: relative;
+}
+form .group-img .group-img-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+form .group-img .group-img-item-two {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+main .btn-register img {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 440px) {
+  header .logo img {
+    width: 320px;
+    height: 158px;
+  }
+  main .chaodon img,
+  main .code img,
+  main .btn-register a img {
+    width: 100%;
+  }
+}
